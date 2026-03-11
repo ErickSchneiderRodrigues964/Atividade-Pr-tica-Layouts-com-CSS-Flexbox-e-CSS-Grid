@@ -1,0 +1,85 @@
+/* 1. Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  max-width: 1000px;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 280px 280px;
+  gap: 15px;
+}
+
+
+.card {
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+
+
+.card h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  max-width: 80%;
+}
+
+/* 4. Ocupação das Colunas (Grid Spanning) */
+.card2 {
+  grid-column: span 2;
+}
+
+.card3 {
+  grid-column: span 2;
+}
+
+
+.card1 { 
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                    url('img/foto1.jpg'); 
+}
+
+.card2 { 
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                    url('img/foto2.jpg'); 
+}
+
+.card3 { 
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                    url('img/foto3.jpg'); 
+}
+
+.card4 { 
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                    url('img/foto4.jpg'); 
+}
+
+/* 6. Estilo do "READ POST" */
+span {
+  align-self: flex-end;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 1px solid transparent;
+  transition: border 0.3s;
+}

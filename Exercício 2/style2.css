@@ -1,0 +1,80 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px;
+}
+
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Card individual */
+.card {
+     
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+
+/* Cabeçalho do card */
+.card-header {
+  padding: 18px;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Corpo do card */
+.card-body {
+  padding: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Ícone */
+.icon {
+  font-size: 20px;
+}
+
+/* Cores dos headers */
+.yellow { background: #f4b400; }
+.blue { background: #4285f4; }
+.teal { background: #34a853; }
+.pink { background: #f06292; }
+.purple { background: #9c27b0; }
+.orange { background: #fb8c00; }
+.cyan { background: #26a69a; }
+.red { background: #ef5350; }
+.hotpink { background: #ec407a; }
+.green { background: #4caf50; }
+.indigo { background: #3f51b5; }
+.amber { background: #fbc02d; }

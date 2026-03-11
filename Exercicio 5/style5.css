@@ -1,0 +1,145 @@
+/* ── Reset ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f0f0f0;
+  padding: 70px;
+}
+
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  grid-template-rows: auto 1fr auto;     
+  grid-template-areas:
+    "header  header"
+    "main    sidebar"
+    "footer  footer";                     
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ── Header ── */
+.header {
+  grid-area: header;
+  background: #3a6fea;
+  border-radius: 10px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  background: #f5a623;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 10px 24px;
+  border-radius: 8px;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+
+
+/* ── Main ── */
+.main {
+  grid-area: main;
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main h1 {
+  font-size: 1.8rem;
+  color: #111;
+}
+
+.main p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.btn {
+  align-self: flex-start;
+  background: #f5a623;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+
+/* ── Sidebar ── */
+.sidebar {
+  grid-area: sidebar;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar h2 {
+  font-size: 1.1rem;
+  color: #111;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar ul li {
+  color: #444;
+  font-size: 0.95rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ── Footer ── */
+
+.footer {
+  grid-area: footer;
+  background: #5a6475;
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+

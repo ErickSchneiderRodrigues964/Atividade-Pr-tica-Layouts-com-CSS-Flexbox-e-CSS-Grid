@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+        
+.container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    padding: 24px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    max-width: 675px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo{
+    background-color: rgb(246,187,39);
+    color: white;                
+    padding: 10px 20px;          
+    border-radius: 12px;        
+    font-weight: bold;
+}
+
+.item {
+    cursor: pointer;
+    padding: 10px 20px;   
+    border-radius: 12px;
+}
+
+.item:hover {
+    background-color: rgb(36, 120, 228);
+    color: white;
+}
